@@ -38,8 +38,8 @@
 <body>
 <ul>
 	<li><a class="active" href="#home"> Home </a></li>
-	<li><a href="/CadastroUsuario"> Cadastro </a></li>
-	<li><a href="/Login"> Login </a></li>
+	<li><a href="/SistemaDeChamados/CadastroUsuario"> Cadastro </a></li>
+	<li><a href="/SistemaDeChamados/Login"> Login </a></li>
 	<li><a href="#transporte"> Transporte </a></li>
 	<li><a href="#eletrica"> Elétrica </a></li>
 	<li><a href="#pedreiro"> Pedreiro </a></li>
