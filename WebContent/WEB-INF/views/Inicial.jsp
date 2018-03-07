@@ -45,5 +45,6 @@
 	<li><a href="#pedreiro"> Pedreiro </a></li>
 	<li style="float:right"><a href="#hidraulica"> Hidráulica </a></li>
 </ul>
+	<img src="servicos.jpg" width="700" height="400">
 </body>
 </html>
