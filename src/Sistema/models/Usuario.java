@@ -9,6 +9,7 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String Departamento;
+	private String Senha;
 	//@DateTimeFormat(pattern="dd/MM/yyyy")
 	//private Calendar dataNascimento;
 
@@ -40,8 +41,16 @@ public class Usuario {
 		return Departamento;
 	}
 
-	public void setEndereco(String departamento) {
+	public void setDepartamento(String departamento) {
 		this.Departamento = departamento;
 	}
+	public String getSenha() {
+		return Senha;
+	}
+
+	public void setSenha(String senha) {
+		this.Senha = senha;
+	}
+
 
 }

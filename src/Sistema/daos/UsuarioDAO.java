@@ -21,7 +21,7 @@ public class UsuarioDAO {
 
 	public boolean inserir(Usuario usuario) {
 
-		String sql = "insert into contatos (nome, email, endereco, dataNascimento) " + "values (?, ?, ?, ?);";
+		String sql = "insert into contatos (nome, email, departamento, senha) " + "values (?, ?, ?, ?);";
 
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
@@ -29,9 +29,9 @@ public class UsuarioDAO {
 			stmt.setString(1, usuario.getNome());
 			stmt.setString(2, usuario.getEmail());
 			stmt.setString(3, usuario.getDepartamento());
+			stmt.setString(4, usuario.getSenha());
 
-			// stmt.setDate(4, new
-			// java.sql.Date(contato.getDataNascimento().getTimeInMillis()));
+			
 
 			stmt.execute();
 			stmt.close();
@@ -45,13 +45,13 @@ public class UsuarioDAO {
 	}
 
 	public boolean alterar(Usuario usuario) {
-		String sql = "update contatos set nome=?, email=?, endereco=?, dataNascimento=? where id=?";
+		String sql = "update usuario set nome=?, email=?, departamento=?, senha=? where id=?";
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			stmt.setString(1, usuario.getNome());
 			stmt.setString(2, usuario.getEmail());
 			stmt.setString(3, usuario.getDepartamento());
-			stmt.setLong(4, usuario.getId());
+			stmt.setString(4, usuario.getSenha());
 			stmt.execute();
 			stmt.close();
 		} catch (SQLException e) {
@@ -63,7 +63,7 @@ public class UsuarioDAO {
 	
 	public boolean remover(Usuario usuario) {
 		try {
-			PreparedStatement stmt = connection.prepareStatement("delete from contatos where id=?");
+			PreparedStatement stmt = connection.prepareStatement("delete from usuario where id=?");
 			stmt.setLong(1, usuario.getId());
 			stmt.execute();
 			stmt.close();
@@ -77,7 +77,7 @@ public class UsuarioDAO {
 		Usuario result = null;
 
 		try {
-			PreparedStatement stmt = this.connection.prepareStatement("select * from contatos where id = ?;");
+			PreparedStatement stmt = this.connection.prepareStatement("select * from usuario where id = ?;");
 			stmt.setLong(1, id);
 			ResultSet rs = stmt.executeQuery();
 
@@ -87,7 +87,8 @@ public class UsuarioDAO {
 				result.setId(rs.getLong("id"));
 				result.setNome(rs.getString("nome"));
 				result.setEmail(rs.getString("email"));
-				result.setEndereco(rs.getString("Departamento"));
+				result.setDepartamento(rs.getString("Departamento"));
+				result.setSenha(rs.getString("senha"));
 			}
 			rs.close();
 			stmt.close();
