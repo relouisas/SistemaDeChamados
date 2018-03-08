@@ -1,7 +1,7 @@
 package Sistema.models;
-import java.util.Calendar;
 
-//import org.springframework.format.annotation.DateTimeFormat;
+
+import org.springframework.web.bind.annotation.RequestMapping;
 
 public class Usuario {
 	
@@ -10,9 +10,7 @@ public class Usuario {
 	private String email;
 	private String Departamento;
 	private String Senha;
-	//@DateTimeFormat(pattern="dd/MM/yyyy")
-	//private Calendar dataNascimento;
-
+	
 	public Long getId() {
 		return id;
 	}

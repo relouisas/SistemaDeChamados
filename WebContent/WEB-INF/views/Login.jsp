@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1> Login </h1>
-	<form action = "/action_page.php">
+	<form action = "/SistemaDeChamados/Chamados">
 		Nome de usuário:<br>
 		<input type="text" name="Nome">
 		<br>

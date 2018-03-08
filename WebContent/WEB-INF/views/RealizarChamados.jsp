@@ -7,13 +7,20 @@
 <title>RealizarChamados</title>
 </head>
 <body>
-	<form action = "/action_page.php">
-		Nome de usuário:<br>
-		<input type="text" name="Nome">
-		<br>
-		Digite seu chamado:<br>
-		<input type="text" name="Chamado">
-		<br>
-		<input type="submit">
+	<form action = "/SistemaDeChamados/Chamados">
+		<div>
+			<label>Nome de usuário:</label>
+			<input type="text" name="Nome">
+		</div>
+		<div>
+			<label>Digite seu chamado:</label>
+			<input type="text" name="Chamado">
+		</div>
+		
+		<div>
+			<button type="submit">Enviar</button>
+		</div>
+		
+		
 </body>
 </html>

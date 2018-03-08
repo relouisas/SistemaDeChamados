@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 import Sistema.daos.ConnectionFactory;
@@ -82,7 +81,7 @@ public class UsuarioDAO {
 			ResultSet rs = stmt.executeQuery();
 
 			while (rs.next()) {
-				// criando o objeto Contato
+				// criando o objeto Usuario
 				result = new Usuario();
 				result.setId(rs.getLong("id"));
 				result.setNome(rs.getString("nome"));
