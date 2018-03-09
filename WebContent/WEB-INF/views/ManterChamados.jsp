@@ -26,6 +26,7 @@
   				<td>${usuario.id}</td>
   				<td>${usuario.nome }</td>
   				<td>${usuario.email }</td>
+  				<td>${mensagem.mensagem }</td>
  
  				<td><a href="mvc?logica=RemoverUsuario&id=${usuario.id}">Remover</a></td>	
  				<td><a href="/SistemaDeChamados/usuario/remover?id=${usuario.id}">Remover</a></td>
