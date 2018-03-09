@@ -21,14 +21,14 @@
   			<th>Status</th>
   		</tr>
  
-  		<a:forEach var="usuario" items="${usuario}">
+  		<a:forEach var="usuario" items="${usuarios}">
  
   			<tr>
   				<td>${usuario.id}</td>
   				<td>${usuario.nome}</td>
   				<td>${usuario.email}</td>
-  				<td>${mensagem.mensagem}</td>
-  				<td>${Chamados.status}</td>
+  				<td>${usuario.mensagem}</td>
+  				<td>${usuario.status}</td>
  
  				<td><a href="mvc?logica=RemoverUsuario&id=${usuario.id}">Remover</a></td>	
  				<td><a href="/SistemaDeChamados/usuario/remover?id=${usuario.id}">Remover</a></td>

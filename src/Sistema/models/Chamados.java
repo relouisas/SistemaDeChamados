@@ -30,7 +30,7 @@ public class Chamados {
 	public String getMensagem() {
 		return Mensagem;
 	}
-	public void setTexto(String mensagem) {
+	public void setMensagem(String mensagem) {
 		Mensagem = mensagem;
 	}
 	public String getStatus() {
