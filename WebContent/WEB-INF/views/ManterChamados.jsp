@@ -18,6 +18,7 @@
   			<th>Nome</th>
   			<th>Email</th>
   			<th>Mensagem</th>
+  			<th>Status</th>
   		</tr>
  
   		<a:forEach var="usuario" items="${usuario}">
@@ -27,6 +28,7 @@
   				<td>${usuario.nome}</td>
   				<td>${usuario.email}</td>
   				<td>${mensagem.mensagem}</td>
+  				<td>${Chamados.status}</td>
  
  				<td><a href="mvc?logica=RemoverUsuario&id=${usuario.id}">Remover</a></td>	
  				<td><a href="/SistemaDeChamados/usuario/remover?id=${usuario.id}">Remover</a></td>
