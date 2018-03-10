@@ -8,7 +8,7 @@ public class Usuario {
 	private Long id;
 	private String nome;
 	private String email;
-	private String Departamento;
+	private String Vinculo;
 	private String Senha;
 	
 	public Long getId() {
@@ -35,12 +35,12 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getDepartamento() {
-		return Departamento;
+	public String getVinculo() {
+		return Vinculo;
 	}
 
-	public void setDepartamento(String departamento) {
-		this.Departamento = departamento;
+	public void setDepartamento(String vinculo) {
+		this.Vinculo = vinculo;
 	}
 	public String getSenha() {
 		return Senha;

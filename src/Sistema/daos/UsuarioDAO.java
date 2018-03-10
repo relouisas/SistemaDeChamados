@@ -20,14 +20,14 @@ public class UsuarioDAO {
 
 	public boolean inserir(Usuario usuario) {
 
-		String sql = "insert into contatos (nome, email, departamento, senha) " + "values (?, ?, ?, ?);";
+		String sql = "insert into usuario (nome, email, vinculo, senha) " + "values (?, ?, ?, ?);";
 
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
 
 			stmt.setString(1, usuario.getNome());
 			stmt.setString(2, usuario.getEmail());
-			stmt.setString(3, usuario.getDepartamento());
+			stmt.setString(3, usuario.getVinculo());
 			stmt.setString(4, usuario.getSenha());
 
 			
@@ -44,12 +44,12 @@ public class UsuarioDAO {
 	}
 
 	public boolean alterar(Usuario usuario) {
-		String sql = "update usuario set nome=?, email=?, departamento=?, senha=? where id=?";
+		String sql = "update usuario set nome=?, email=?, vinculo=?, senha=? where id=?";
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			stmt.setString(1, usuario.getNome());
 			stmt.setString(2, usuario.getEmail());
-			stmt.setString(3, usuario.getDepartamento());
+			stmt.setString(3, usuario.getVinculo());
 			stmt.setString(4, usuario.getSenha());
 			stmt.execute();
 			stmt.close();
@@ -86,7 +86,7 @@ public class UsuarioDAO {
 				result.setId(rs.getLong("id"));
 				result.setNome(rs.getString("nome"));
 				result.setEmail(rs.getString("email"));
-				result.setDepartamento(rs.getString("Departamento"));
+				result.setDepartamento(rs.getString("vinculo"));
 				result.setSenha(rs.getString("senha"));
 			}
 			rs.close();

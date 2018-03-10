@@ -4,7 +4,7 @@ public class Responsavel {
 	private Long id;
 	private String nome;
 	private String email;
-
+	private String Senha;
 
 	public Long getId() {
 		return id;
@@ -28,5 +28,13 @@ public class Responsavel {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getSenha() {
+		return Senha;
+	}
+
+	public void setSenha(String senha) {
+		this.Senha = senha;
 	}
 }
