@@ -21,7 +21,7 @@ public class UsuariosController {
 		
 		System.out.println("Nome: " + a.getNome());
 		System.out.println("Email: " + a.getEmail());
-		System.out.println("Departamento: " + a.getDepartamento());
+		System.out.println("Vinculo: " + a.getVinculo());
 		System.out.println("Senha:" + a.getSenha());
 		
 		UsuarioDAO dao = new UsuarioDAO();
