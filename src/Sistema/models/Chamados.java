@@ -1,7 +1,5 @@
 package Sistema.models;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
 public class Chamados {
 	private Long Id;
 	private String Nome;

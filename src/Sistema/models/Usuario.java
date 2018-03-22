@@ -1,8 +1,5 @@
 package Sistema.models;
 
-
-import org.springframework.web.bind.annotation.RequestMapping;
-
 public class Usuario {
 	
 	private Long id;
