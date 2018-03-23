@@ -10,8 +10,7 @@
 <a:import url="../Inicial.jsp"></a:import>
 
   	<h1>Lista de Chamados</h1>
-  
- 	<table>
+
  	<table border="1">
   		<tr>
   			<th>ID</th>

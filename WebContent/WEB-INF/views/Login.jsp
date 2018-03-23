@@ -16,5 +16,6 @@
 		<input type="password" name="senha">
 		<br>
 		<input type="submit">
+	</form>
 </body>
 </html>

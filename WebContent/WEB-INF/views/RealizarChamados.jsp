@@ -20,7 +20,7 @@
 		<div>
 			<button type="submit">Enviar</button>
 		</div>
-		
+	</form>
 		
 </body>
 </html>
