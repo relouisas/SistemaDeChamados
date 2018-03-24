@@ -26,8 +26,6 @@ public class ChamadosDAO {
 			stmt.setString(4, chamados.getMensagem());
 			stmt.setString(5, chamados.getStatus());
 
-			
-
 			stmt.execute();
 			stmt.close();
 
@@ -35,8 +33,6 @@ public class ChamadosDAO {
 			e.printStackTrace();
 			return false;
 		}
-
 		return true;
 	}
-	
 }
