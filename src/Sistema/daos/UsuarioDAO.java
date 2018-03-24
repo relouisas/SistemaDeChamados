@@ -5,10 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 import Sistema.daos.ConnectionFactory;
 import Sistema.models.Usuario;
-
 
 public class UsuarioDAO {
 	private Connection connection;
@@ -28,8 +26,6 @@ public class UsuarioDAO {
 			stmt.setString(2, usuario.getEmail());
 			stmt.setString(3, usuario.getVinculo());
 			stmt.setString(4, usuario.getSenha());
-
-			
 
 			stmt.execute();
 			stmt.close();
